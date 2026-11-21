@@ -1,16 +1,39 @@
-# React + Vite
+# ScholarDesk Student Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive student management app built with React and Vite. It includes a sample school dataset so the project is ready to run immediately.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install Node.js (version 22 or newer).
+2. In the project folder, install dependencies:
 
-## React Compiler
+   ```bash
+   npm install
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+3. Start the development server:
 
-## Expanding the ESLint configuration
+   ```bash
+   npm run dev
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Open the local URL printed by Vite.
+
+To create and preview a production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Pages
+
+- **Dashboard** — enrollment, course, attendance, and fee summaries.
+- **Students** — search, filter, add, edit, and remove student records.
+- **Courses** — view programs and add courses.
+- **Attendance** — mark attendance by date and update the full register.
+- **Fees & billing** — filter payment status and mark fees paid or due.
+- **Reports** — review enrollment by course and school totals.
+- **Settings** — edit school details or restore the sample dataset.
+
+Student, course, attendance, fee, and school settings data are stored in the browser's local storage. No server or account is required. Use **Settings → Restore demo data** to restore the starter records.
