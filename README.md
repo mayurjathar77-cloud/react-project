@@ -26,6 +26,12 @@ npm run build
 npm run preview
 ```
 
+## Deploy to GitHub Pages
+
+The `main` branch is built with Vite and deployed from the `dist` artifact by the
+GitHub Actions workflow. In **Settings → Pages**, set **Build and deployment** →
+**Source** to **GitHub Actions**. Each push to `main` then triggers a deployment.
+
 ## Pages
 
 - **Dashboard** — enrollment, course, attendance, and fee summaries.
